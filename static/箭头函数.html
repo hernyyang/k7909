@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+  </head>
+  <body>
+  <script>
+    //匿名函数
+    var fn=function(){
+      console.log("hello")
+    }
+    //箭头函数
+    var fn=()=>{
+      console.log("hello")
+    }
+    var fn1=function(num1,num2){
+      return num1+num2;
+    }
+   alert(fn1(5,10)) ;
+    var fn1=(num1,num2)=>{
+      return num1+num2;
+    }
+    var obj={
+      students:["张三","李四","王五"],
+      show:function(){
+        return function(){
+          //console.log(this)
+          return this.students[2]
+        }
+      }
+    }
+    var f=obj.show()
+    console.log(fn())
+  </script>
+</body>
+</html>
