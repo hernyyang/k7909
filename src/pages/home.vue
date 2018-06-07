@@ -19,7 +19,7 @@
           <img src="../assets/image/banner/03.jpg" alt="">
         </div>
       </Banner>
-      <Cell  txt="热点" :isHot=true></Cell>
+      <Cell  txt="热点11" :isHot=true></Cell>
       <News :title="i.title" :des="i.des" :author="i.author" v-for="i in arr">
         <img slot="tu" :src="i.src" alt="">
       </News>
